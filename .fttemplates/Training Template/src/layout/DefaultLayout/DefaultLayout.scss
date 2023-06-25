@@ -1,0 +1,19 @@
+
+[data-layout="defaultLayout"] {
+    width: 100vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: 60px auto;
+    & > .top-menu-area {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        background-color: cadetblue;
+
+        & > p {
+            font-size: 20px;
+            color: white;
+        }
+    }
+}
