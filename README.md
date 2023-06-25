@@ -56,3 +56,7 @@
         `――― cjg ―――`
 
         `start:cjg`
+
+---
+
+## 정답은 `packages/sample`에 구현되어 있습니다. 
