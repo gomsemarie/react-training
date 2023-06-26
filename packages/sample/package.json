@@ -2,7 +2,7 @@
   "name": "@project/sample",
   "version": "0.1.0",
   "scripts": {
-    "start": "vite"
+    "start:sample": "vite"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.1",
