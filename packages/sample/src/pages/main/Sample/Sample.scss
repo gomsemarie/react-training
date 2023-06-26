@@ -1,11 +1,19 @@
-[data-component='sample'] {
-    display: grid;
-    justify-content: center;
-    
-    & > .title {
-        font-size: 30px;
-        font-weight: bold;
+[data-component="sample"] {
+  display: grid;
+  justify-content: center;
 
-        padding: 50px 0;
+  & > .title-box {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  & > .content-box {
+    display: grid;
+    gap: 20px;
+
+    & > .recoil-data {
+      text-align: center;
+      color: #393939;
     }
+  }
 }

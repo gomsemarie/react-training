@@ -1,118 +1,106 @@
 [data-page="root"] {
-    a {
-        text-decoration: none;
-    }
+  padding: 20px;
 
+  a {
+    text-decoration: none;
+  }
+
+  display: grid;
+  justify-content: center;
+
+  & > .title-box {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  & > .content-box {
     display: grid;
-    justify-content: center;
+    gap: 20px;
 
-    & > .title {
-        padding: 50px 0;
-        text-align: center;
-        font-size: 50px;
-        font-weight: bold;
-    }
+    .recoil-textarea {
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
-    & > .content-box {
-        display: grid;
-        gap: 20px;
+      & > p {
+        margin-bottom: 10px;
+      }
+      & > textarea {
+        padding: 10px 0;
+        width: 100%;
+        color: #b0b0b0;
+        border-top: 3px solid #ff5a5a;
+        border-bottom: 3px solid #ff5a5a;
+
+        &:focus {
+          outline: none;
+        }
+      }
     }
+  }
 }
 
 [data-component="root.training"] {
-    & > .title {
-        padding-top: 20px;
-        font-weight: bold;
-        font-size: 20px;
+  & > .title {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  & > .desc-box {
+    padding: 10px 0;
+
+    & > p {
+      padding: 2px;
+      font-size: 12px;
     }
-
-    & > .desc-box {
-        padding: 10px 0;
-
-        & > p {
-            padding: 2px;
-            font-size: 12px;
-        }
-    }
-
-    & > .content {
-
-    }
+  }
 }
 
 $colors: #563e2e, #d77d37, #e8a545;
 [data-component="root.counter"] {
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 
-    & > .count-box {
-        margin-bottom: 10px;
-        
-        & > input[type="text"] {
-            border-radius: 5px;
-            width: 100%;
-            border: px solid #393939;
-            text-align: center;
-            font-weight: bold;
-            font-size: 20px;
+  & > .count-box {
+    margin-bottom: 10px;
 
-            &:focus {
-                outline: none;
-            }
-        }
+    & > input[type="text"] {
+      border-radius: 5px;
+      width: 100%;
+      border: px solid #393939;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+
+      &:focus {
+        outline: none;
+      }
     }
+  }
 
-    & > .controller-box {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 10px;
+  & > .controller-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
 
-        & > button {
-            background-color: #393939;
-            color: white;
-            border: 0;
-            padding: 10px;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: bold;
+    & > button {
+      background-color: #393939;
+      color: white;
+      border: 0;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
 
-            &:hover {
-                opacity: 0.8;
-            }
-        }
+      &:hover {
+        opacity: 0.8;
+      }
     }
-}
-
-[data-component="root.styledText"] {
-	@mixin retro-shadow($colors, $size:15) {
-        $counter: 0;
-        $text-shadow-posX: 0;
-        $text-shadow-posY: 0;
-        $text-shadow-value: null;
-        
-        @each $color in $colors {
-            @for $i from 0 to $size {
-            $counter: $counter + 1;
-            $pos: $counter * 0.01;
-            $posX: $pos + em;
-            $posY: $pos + em;
-        
-            $text-shadow-value: append($text-shadow-value, $posX $posY $color, comma);
-            }
-        }
-    
-        text-shadow: $text-shadow-value;
-    }
-    
-    & > .retro {
-        @include retro-shadow($colors);
-    }
-    
-    h1 {
-        font-family: "Oleo Script Swash Caps", cursive;
-        font-size: 60pt;
-        color: #f6ce91;
-    }
+  }
 }

@@ -6,12 +6,13 @@
  * TYPE : Component
  * 개정이력 :
 --------------------------------------------------------------------------------------------------------------------------------------------*/
-import React from 'react';
+import React from "react";
 import "./Sample.scss";
+import { StyledText } from "@/components/StyledText/StyledText";
 
-interface SampleProps {};
+interface SampleProps {}
 
-function Sample (props: SampleProps) { 
+function Sample(props: SampleProps) {
   /* ――――――――――――――― Variable ――――――――――――――― */
   /* Props ――――― */
   const {} = props;
@@ -25,12 +26,19 @@ function Sample (props: SampleProps) {
 
   /* ―――――――――――――――― Return ―――――――――――――――― */
   return (
-    <div data-component='sample'>
-      <p className='title'>Sample Page</p>
+    <div data-component="sample">
+      <div className="title-box">
+        <StyledText text={["Sample", "Page"]} />
+      </div>
+      <div className="content-box">
+        <p className="recoil-data">
+          여기에 Textarea와 연동된 Recoil state의 값을 출력해 주세요
+        </p>
+      </div>
     </div>
   );
-};
+}
 
-namespace Sample {};
+namespace Sample {}
 
 export default Sample;
