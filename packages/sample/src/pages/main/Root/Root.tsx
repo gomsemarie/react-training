@@ -23,6 +23,7 @@ const tl: TrainingType[] = [
     desc: [
       `1. "Go Sample Page" <a> 태그를 클릭하면 /sample 로 이동하도록 해주세요`,
       `2. /sample 로 이동하면 화면에 "Sample Page"문구가 보이도록 해주세오`,
+      `3. useNavigate를 사용해서 구현해 주세요`,
     ],
   },
   {
@@ -35,7 +36,7 @@ const tl: TrainingType[] = [
   {
     title: `Q3. "Counter" 컴포넌트를 만들어 주세요.`,
     desc: [
-      `1. Counter를 컴포넌트로 만들고 적용해 주세요.`,
+      `1. Counter를 컴포넌트로 만들고 적용해 주세요.("Root.tsx" 하단에 만들어둔 Counter 컴포넌트를 껍데기를 사용해 주세요)`,
       `2. props로 amount 값을 받아 '+', '-' 버큰 클릭 시 amount만큼 증가, 감소 하도록 구현해 주세요.`,
       `3. '0' 버튼을 클릭하면 counter 값이 0으로 초기화 되도록 해주세요.`,
     ],
