@@ -17,6 +17,9 @@ function App() {
           <Route path="/q3" element={<MainPage.Q3 />} />
           <Route path="/q4" element={<MainPage.Q4 />} />
           <Route path="/q5" element={<MainPage.Q5 />} />
+          <Route path="/q6" element={<MainPage.Q6 />} />
+          <Route path="/q7" element={<MainPage.Q7 />} />
+          <Route path="/q8" element={<MainPage.Q8 />} />
         </Route>
 
         <Route element={<SampleLayout />}>
