@@ -3,6 +3,7 @@ import { TrainingType } from "../entity/training";
 export const TRAINING_QUESTIONS: TrainingType[] = [
   {
     name: "Q1",
+    mainPoint: `React SPA에서 URL 이동`,
     title: `Q1. Sample page 바로가기를 만들어주세요.`,
     desc: [
       `- "Go Sample Page" 버튼과 <a> 태그를 클릭하면 /sample 페이지로 이동하도록 코드를 작성해 주세요.`,
@@ -14,6 +15,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
   },
   {
     name: "Q2",
+    mainPoint: `Routing 영역에서 공통 Layout 추가`,
     title: `Q2. Sample 페이지에 react-router-dom의 <Route /> 태그를 사용하여 SampleLayout을 적용해 주세요.`,
     desc: [
       `- "App.tsx"에서 <Route /> 태그를 사용하여 SampleLayout을 적용해 주세요.`,
@@ -25,6 +27,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
   },
   {
     name: "Q3",
+    mainPoint: `React state, props 사용법`,
     title: `Q3. "Counter" 컴포넌트를 완성해 주세요.`,
     desc: [
       `- Count 컴포넌트에 amount props를 추가해 해당 값 만큼 증가, 감소 하도록 구현해 주세요 `,
@@ -35,6 +38,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
   },
   {
     name: "Q4",
+    mainPoint: `Recoil atom, selector 사용법`,
     title: `Q4. Recoil을 사용하여 Textarea에서 작성한 내용을 Sample page에서 보여주세요.`,
     desc: [
       `- ".../Q4/store/main-text/selector.tsx" 폴더 내의 "MainTextSelector.textSelector"를 사용해서 구현해 주세요.`,
@@ -47,6 +51,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
   },
   {
     name: "Q5",
+    mainPoint: ``,
     title: `Q4. Recoil을 사용하여 Root page에서 작성한 내용을 Sample page에서 보여주세요.`,
     desc: [
       `1. src/pages/main/Root/store/main-text 폴더에 만들어진 Recoil state를 수정해서 구현해 주세요`,

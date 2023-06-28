@@ -102,10 +102,11 @@ namespace DefaultLayout {
 
   interface TrainingProps extends TrainingType {}
   export function Training(props: TrainingProps) {
-    const { title, desc, hint = [] } = props;
+    const { mainPoint, title, desc, hint = [] } = props;
 
     return (
       <div data-component="defaultLayout.training">
+        <p className="main-point">{mainPoint}</p>
         <p className="title">{title}</p>
         <div className="desc-box">
           {desc.map((d, i) => (

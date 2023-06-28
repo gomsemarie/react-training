@@ -77,14 +77,21 @@
 [data-component="defaultLayout.training"] {
   height: 100%;
   display: grid;
-  grid-template-rows: max-content auto max-content max-content;
+  grid-template-rows: max-content max-content auto max-content max-content;
 
-  & > .title {
+  & > .main-point, & > .title {
     padding: 5px 20px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     background-color: rgba(#b2dfdb, 0.7);
     border-bottom: 2px solid white;
+  }
+
+  & > .main-point {
+    background-color: cadetblue;
+    &::before {
+      content: 'MAIN POINT - ';
+    }
   }
 
   & > .desc-box {
