@@ -26,7 +26,7 @@ function Q2() {
   }, []);
 
   /* ―――――――――――――――― Return ―――――――――――――――― */
-  return <div data-page="q2">해 줘</div>;
+  return <div data-page="q2"></div>;
 }
 
 namespace Q2 {}

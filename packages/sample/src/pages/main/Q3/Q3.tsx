@@ -29,7 +29,7 @@ function Q3() {
   return (
     <div data-page="q3">
       <Q3.Counter />
-      {/* <Q2.Counter amount={10} /> */}
+      {/* <Q3.Counter amount={10} /> */}
     </div>
   );
 }

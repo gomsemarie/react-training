@@ -21,4 +21,20 @@ export namespace TrainingSelector {
       });
     },
   });
+
+  export const key2Selector = selector<ITrainingState["key2"]>({
+    key: "trainingSelector.key2Selector",
+    get: ({ get }) => {
+      const data = get(trainingState);
+      return data.key2;
+    },
+    set: ({ set }, newValue) => {
+      set(trainingState, (s) => {
+        return {
+          ...s,
+          key2: newValue as string,
+        };
+      });
+    },
+  });
 }

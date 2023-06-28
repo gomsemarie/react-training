@@ -3,6 +3,7 @@ import * as MainPage from "./pages/main";
 
 import "./App.scss";
 import DefaultLayout from "./layout/DefaultLayout";
+import SampleLayout from "./layout/SampleLayout";
 
 function App() {
   return (
@@ -15,9 +16,12 @@ function App() {
           <Route path="/q2" element={<MainPage.Q2 />} />
           <Route path="/q3" element={<MainPage.Q3 />} />
           <Route path="/q4" element={<MainPage.Q4 />} />
+          <Route path="/q5" element={<MainPage.Q5 />} />
         </Route>
 
-        <Route path="/sample" element={<MainPage.Sample />} />
+        <Route element={<SampleLayout />}>
+          <Route path="/sample" element={<MainPage.Sample />} />
+        </Route>
       </Routes>
     </div>
   );

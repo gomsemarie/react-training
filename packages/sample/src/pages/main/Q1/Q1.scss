@@ -1,2 +1,26 @@
 [data-page="q1"] {
+    & > div {
+        margin-bottom: 30px;
+
+        & > p {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        & > a {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        & > button {
+            background-color: #b2dfdb;
+            padding: 5px 20px;
+            border-radius: 5px;
+            color: black;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
 }

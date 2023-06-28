@@ -1,4 +1,22 @@
 [data-page="q4"] {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content auto;
+  gap: 10px;
+
+  & > .sample-page-box {
+    height: 100%;
+    border: 1px solid white;
+    
+    display: grid;
+    grid-template-rows: max-content auto;
+    & > p {
+      background-color: white;
+      color: black;
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
 }
 
 [data-component="q4.recoilTextarea"] {

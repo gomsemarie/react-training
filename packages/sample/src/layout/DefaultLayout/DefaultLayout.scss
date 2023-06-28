@@ -75,6 +75,10 @@
 }
 
 [data-component="defaultLayout.training"] {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content auto max-content max-content;
+
   & > .title {
     padding: 5px 20px;
     font-weight: bold;
@@ -88,13 +92,14 @@
 
     & > p {
       padding: 2px;
-      font-size: 12px;
+      font-size: 14px;
+      margin-bottom: 5px;
     }
   }
 
   & > .hint-box {
     & > p {
-      background-color: rgba(#b2dfdb, 0.6);
+      background-color: rgba(#b2dfdb, 0.0);
       padding: 10px;
       font-size: 12px;
       color: transparent;

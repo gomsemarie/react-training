@@ -31,7 +31,7 @@ function Sample(props: SampleProps) {
   return (
     <div data-component="sample">
       <div className="title-box">
-        <StyledText text={["Sample", "Page"]} />
+        <p>Sample Page</p>
       </div>
       <div className="content-box">
         <p className="recoil-data">{text}</p>

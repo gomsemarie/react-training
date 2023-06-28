@@ -8,8 +8,10 @@
 --------------------------------------------------------------------------------------------------------------------------------------------*/
 import React from "react";
 import "./Q4.scss";
-import { useSetRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 import { TrainingSelector } from "@/layout/DefaultLayout/store/training/selector";
+import { MainTextSelector } from "./store/main-text/selector";
+import Sample from "../Sample";
 
 function Q4() {
   /* ――――――――――――――― Variable ――――――――――――――― */
@@ -28,7 +30,11 @@ function Q4() {
   /* ―――――――――――――――― Return ―――――――――――――――― */
   return (
     <div data-page="q4">
-      <Q4.RecoilTextArea />
+      <div><Q4.RecoilTextArea /></div>
+      <div className="sample-page-box">
+        <p>Sample Page 미리보기</p>
+        <Sample />
+      </div>
     </div>
   );
 }
