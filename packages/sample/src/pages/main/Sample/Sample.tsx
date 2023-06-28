@@ -10,7 +10,7 @@ import React from "react";
 import "./Sample.scss";
 import { StyledText } from "@/components/StyledText/StyledText";
 import { useRecoilValue } from "recoil";
-import { MainTextSelector } from "../Root/store/main-text/selector";
+import { MainTextSelector } from "../Q4/store/main-text/selector";
 
 interface SampleProps {}
 

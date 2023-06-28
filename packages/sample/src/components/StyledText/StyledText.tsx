@@ -11,13 +11,14 @@ import "./StyledText.scss";
 
 interface StyledTextProps {
   text: string[];
+  style?: React.CSSProperties;
   children?: React.ReactNode;
 }
 export function StyledText(props: StyledTextProps) {
-  const { text } = props;
+  const { text, style } = props;
   return (
     <div data-component="styledText">
-      <h1>
+      <h1 style={style}>
         {text.map((t, i) => {
           return (
             <span
