@@ -8,16 +8,22 @@
 --------------------------------------------------------------------------------------------------------------------------------------------*/
 import React from 'react';
 import './Q8.scss';
+import { useSetRecoilState } from 'recoil';
+import { TrainingSelector } from '@/layout/DefaultLayout/store/training/selector';
 
 function Q8 () { 
   /* ――――――――――――――― Variable ――――――――――――――― */
   /* State ――――― */
+  const setTrainingStage = useSetRecoilState(TrainingSelector.nowStageSelector);
   /* Const ――――― */
   /* API ――――――― */
 
   /* ―――――――――――――――― Method ―――――――――――――――― */
 
   /* ―――――――――――――― Use Effect ―――――――――――――― */
+  React.useEffect(() => {
+    setTrainingStage(8);
+  }, []);
 
   /* ―――――――――――――――― Return ―――――――――――――――― */
   return <div data-page="q8">New Page</div>;

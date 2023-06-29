@@ -51,12 +51,38 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
   },
   {
     name: "Q5",
-    mainPoint: ``,
-    title: `Q4. Recoil을 사용하여 Root page에서 작성한 내용을 Sample page에서 보여주세요.`,
+    mainPoint: `React에서 컴포넌트 만드는 방법`,
+    title: `Q5. Dropdown 컴포넌트를 만들어 주세요.`,
     desc: [
-      `1. src/pages/main/Root/store/main-text 폴더에 만들어진 Recoil state를 수정해서 구현해 주세요`,
-      `2. Root page의 Textarea에 Recoil state를 연동해 주세요`,
-      `3. Textarea의 내용을 변경했을 때 Sample page에 적용되도록 Sample page를 수정해 주세요`,
+      `- props에는 Dropdown의 값 목록인 list, 기본값인 defaultValue, onChange 함수가 있습니다.`,
+      `- <ul> 태그 내부에 <li> 태그를 사용햐 Dropdown list를 출력해 주세요. (printList 함수 내부를 구현해 주시면 됩니다.)`,
+      `- defaultValue가 undefined가 아닐 경우 최초 생성시 <button>에 defaultValue를 넣어주고 undefined일 경우 blank string을 넣어주세요. (useEffect를 사용해서 구현해 주세요.)`,
+      `- <button> 클릭시 Dropdown list가 보이고 컴포넌트 바깥을 클릭하거나 <li>를 선택하면 list가 숨겨지도록 구현해 주세요. (useOnClickOutside hook을 사용해서 구현해 주세요.)`,
+      `- onChange 함수를 props로 받았을 경우 Dropdown의 value가 변경되면 parameter로 value를 넘겨주고 onChange 함수를 실행해 주세요. (useEffect를 사용해서 구현해 주세요.)`,
+    ],
+  },
+  {
+    name: "Q6",
+    mainPoint: ``,
+    title: `Q6. 타이틀`,
+    desc: [
+      `- desc`,
+    ],
+  },
+  {
+    name: "Q7",
+    mainPoint: ``,
+    title: `Q7. 타이틀`,
+    desc: [
+      `- desc`,
+    ],
+  },
+  {
+    name: "Q8",
+    mainPoint: ``,
+    title: `Q8. 타이틀`,
+    desc: [
+      `- desc`,
     ],
   },
 ];
