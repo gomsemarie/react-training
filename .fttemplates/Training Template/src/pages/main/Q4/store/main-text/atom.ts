@@ -1,11 +1,11 @@
 import { atom } from "recoil";
 
 export interface IMainTextState {
-  anyKey: string;
+  text: string;
 }
 
 const INIT_MAIN_TEXT_STATE: IMainTextState = {
-  anyKey: "",
+  text: "",
 };
 
 const mainTextState = atom<IMainTextState>({

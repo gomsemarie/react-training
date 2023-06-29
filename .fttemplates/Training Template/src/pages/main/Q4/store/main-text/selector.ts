@@ -2,17 +2,17 @@ import { selector } from "recoil";
 import { mainTextState, IMainTextState } from "./atom";
 
 export namespace MainTextSelector {
-  export const anyKeySelector = selector<IMainTextState["anyKey"]>({
-    key: "mainTextSelector.anyKeySelector",
+  export const textSelector = selector<IMainTextState["text"]>({
+    key: "mainTextSelector.textSelector",
     get: ({ get }) => {
       const data = get(mainTextState);
-      return data.anyKey;
+      return data.text;
     },
     set: ({ set }, newValue) => {
       set(mainTextState, (s) => {
         return {
           ...s,
-          anyKey: newValue as string,
+          text: newValue as string,
         };
       });
     },

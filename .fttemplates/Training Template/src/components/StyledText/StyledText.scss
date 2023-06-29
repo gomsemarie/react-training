@@ -5,36 +5,18 @@
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 60px;
-    user-select: none;
 
     & > span.light {
       color: #fefefe;
-      text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0,
-        0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
+      // text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0,
+      //   0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
     }
 
     & > span.dark {
-      color: #101010;
-      text-shadow: 0px 1px 0px #555555, 0px 2px 0px #454545, 0px 3px 0px #353535,
-        0px 4px 0px #252525, 0px 5px 10px rgba(0, 0, 0, 0.6);
-    }
-
-    &:active {
-      line-height: 205px;
-
-      & > span.light {
-        color: #fefefe;
-        text-shadow: 0px 0px 0px #c0c0c0, 0px 0px 0px #b0b0b0,
-          0px 0px 0px #a0a0a0, 0px 0px 0px #909090,
-          0px 1px 3px rgba(0, 0, 0, 0.4);
-      }
-
-      & > span.dark {
-        color: #101010;
-        text-shadow: 0px 0px 0px #555555, 0px 0px 0px #454545,
-          0px 0px 0px #353535, 0px 0px 0px #252525,
-          0px 1px 3px rgba(0, 0, 0, 0.4);
-      }
+      color: #80cbc4;
+      // color: #e0f2f1;
+      // text-shadow: 0px 1px 0px #80cbc4, 0px 2px 0px #80cbc4, 0px 3px 0px #80cbc4,
+      //   0px 4px 0px #26a69a, 0px 5px 10px rgba(0, 0, 0, 0.6);
     }
   }
 }

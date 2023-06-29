@@ -1,19 +1,121 @@
-
 [data-layout="defaultLayout"] {
-    width: 100vw;
-    height: 100vh;
+  width: 100vw;
+  height: 100vh;
 
+  display: grid;
+  grid-template-rows: 40px auto;
+  grid-template-columns: min-content 700px auto;
+
+  & > .top-menu-area {
+    grid-column: span 3;
+    width: 100%;
     display: grid;
-    grid-template-rows: 60px auto;
-    & > .top-menu-area {
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        background-color: cadetblue;
+    grid-template-columns: min-content auto min-content;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #37373d;
 
-        & > p {
-            font-size: 20px;
-            color: white;
+    & > .button-box {
+      padding: 0 40px;
+
+      & > button {
+        width: 30px;
+        height: 30px;
+        // background-color: #bedfde;
+        color: #bedfde;
+        border-radius: 15px;
+
+        &:hover {
+          opacity: 0.8;
         }
+
+        &.disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
+      }
     }
+  }
+
+  & > .quick-menu-area {
+    border-right: 1px solid #37373d;
+    background-color: #181818;
+  }
+
+  & > .text-area {
+    border-right: 1px solid #37373d;
+    word-break: keep-all;
+    background-color: #181818;
+    color: white;
+  }
+
+  & > .content-area {
+    padding: 20px;
+    color: white;
+    background-color: #1f1f1f;
+  }
+}
+
+[data-component="defaultLayout.quickMenu"] {
+  & > li {
+    cursor: pointer;
+    padding: 10px 20px;
+    // background-color: #4c4c4c;
+    color: white;
+    background-color: rgba(#b2dfdb, 0.4);
+
+    &.selected {
+      background-color: rgba(#b2dfdb, 0.6);
+    }
+
+    &:hover {
+      background-color: rgba(#b2dfdb, 0.7);
+    }
+  }
+}
+
+[data-component="defaultLayout.training"] {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content max-content auto max-content max-content;
+
+  & > .main-point, & > .title {
+    padding: 5px 20px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgba(#b2dfdb, 0.7);
+    border-bottom: 1px solid #37373d;
+  }
+
+  & > .main-point {
+    background-color: cadetblue;
+    &::before {
+      content: 'MAIN POINT - ';
+    }
+  }
+
+  & > .desc-box {
+    padding: 20px;
+
+    & > p {
+      padding: 2px;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+  }
+ 
+  & > .hint-box {
+    & > p {
+      background-color: rgba(#b2dfdb, 0.0);
+      padding: 10px;
+      font-size: 12px;
+      color: transparent;
+      border-bottom: 1px solid #37373d;
+
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
 }

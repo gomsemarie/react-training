@@ -1,0 +1,45 @@
+[data-page="q4"] {
+  height: 100%;
+  display: grid;
+  grid-template-rows: max-content auto;
+  gap: 10px;
+
+  & > .sample-page-box {
+    height: 100%;
+    border: 1px solid white;
+    
+    display: grid;
+    grid-template-rows: max-content auto;
+    & > p {
+      background-color: white;
+      color: black;
+      font-size: 12px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+[data-component="q4.recoilTextarea"] {
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  & > p {
+    margin-bottom: 10px;
+  }
+  & > textarea {
+    padding: 10px 0;
+    width: 100%;
+    color: #b0b0b0;
+    border-top: 3px solid #b2dfdb;
+    border-bottom: 3px solid #b2dfdb;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

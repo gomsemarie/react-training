@@ -1,7 +1,7 @@
 /*------------------------------------------------------------------------------------------------------------------------------------------
  * Sample.tsx
- * WRITER : <FTName | camelcase>
- * DATE : 2023-xx-xx
+ * WRITER : 최정근
+ * DATE : 2023-06-25
  * DISCRIPTION : Sample 페이지
  * TYPE : Component
  * 개정이력 :
@@ -9,6 +9,8 @@
 import React from "react";
 import "./Sample.scss";
 import { StyledText } from "@/components/StyledText/StyledText";
+import { useRecoilValue } from "recoil";
+import { MainTextSelector } from "../Q4/store/main-text/selector";
 
 interface SampleProps {}
 
@@ -17,6 +19,7 @@ function Sample(props: SampleProps) {
   /* Props ――――― */
   const {} = props;
   /* State ――――― */
+  const text = useRecoilValue(MainTextSelector.textSelector);
   /* Const ――――― */
   /* API ――――――― */
 
@@ -28,12 +31,10 @@ function Sample(props: SampleProps) {
   return (
     <div data-component="sample">
       <div className="title-box">
-        <StyledText text={["Sample", "Page"]} />
+        <p>Sample Page</p>
       </div>
       <div className="content-box">
-        <p className="recoil-data">
-          여기에 Textarea와 연동된 Recoil state의 값을 출력해 주세요
-        </p>
+        <p className="recoil-data">{text}</p>
       </div>
     </div>
   );

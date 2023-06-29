@@ -1,1 +1,1 @@
-# @project/<FTName | camelcase>
+# @project/sample
