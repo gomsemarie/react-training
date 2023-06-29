@@ -9,7 +9,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
       `- "Go Sample Page" 버튼과 <a> 태그를 클릭하면 /sample 페이지로 이동하도록 코드를 작성해 주세요.`,
       `- sample 페이지 URL은 "/sample"입니다.`,
       `- Q1-1 은 react-router-dom의 useNavigate hook을 사용해서 구현해 주세요.`,
-      `- Q1-2 는 react-router-dom의 <Link /> 태그를 사용해서 구현해 주세요.`
+      `- Q1-2 는 react-router-dom의 <Link /> 태그를 사용해서 구현해 주세요.`,
     ],
     hint: [`이걸 보는 너는 바보다`, `이걸 보는 너는 멍충멍충이다`],
   },
@@ -22,8 +22,8 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
       `- sample 페이지 URL은 "/sample"입니다.`,
     ],
     hint: [
-      `react-router-dom의 <Outlet /> 태그를 "SampleLayout.tsx"에 적용해야 Sample 페이지 내용이 표시됩니다. `
-    ]
+      `react-router-dom의 <Outlet /> 태그를 "SampleLayout.tsx"에 적용해야 Sample 페이지 내용이 표시됩니다. `,
+    ],
   },
   {
     name: "Q3",
@@ -45,9 +45,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
       `- Textarea에 Recoil state를 연동해 주세요.`,
       `- Sample 페이지에는 이미 mainTextState가 연동되어 있어 별도로 수정하지 않아도 됩니다.`,
     ],
-    hint: [
-      `useRecoilState를 사용하면 됩니다.`
-    ]
+    hint: [`useRecoilState를 사용하면 됩니다.`],
   },
   {
     name: "Q5",
@@ -61,6 +59,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
       `- defaultValue가 undefined가 아닐 경우 최초 생성시 <button>에 defaultValue를 넣어주고 undefined일 경우 blank string을 넣어주세요. (useEffect를 사용해서 구현해 주세요)`,
       `- <button> 클릭시 Dropdown list가 보이고 컴포넌트 바깥을 클릭하거나 <li>를 선택하면 list가 숨겨지도록 구현해 주세요. (useOnClickOutside hook을 사용해서 구현해 주세요)`,
       `- onChange 함수를 props로 받았을 경우 Dropdown의 value가 변경되면 parameter로 value를 넘겨주고 onChange 함수를 실행해 주세요. (useEffect를 사용해서 구현해 주세요)`,
+      `- interface, generic, hook을 어떻게, 어떤 용도로 사용했는지 한번 살펴봐주세요.`,
       ``,
       ``,
       ``,
@@ -71,6 +70,7 @@ export const TRAINING_QUESTIONS: TrainingType[] = [
       `- If defaultValue is not undefined, insert defaultValue into <button> when first created, and if undefined, insert blank string. (Please use useEffect to implement it)`,
       `- Please implement so that the dropdown list is visible when <button> is clicked and the list is hidden when clicking outside the component or selecting <li>. (Please use the useOnClickOutside hook to implement it)`,
       `- If the onChange function is received as props and the dropdown value changes, pass the value as a parameter and execute the onChange function. (Please use useEffect to implement it)`,
+      `- Please take a look at how and for what purpose interfaces, generics, and hooks are used.`,
     ],
   },
   // {
